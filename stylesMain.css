@@ -1,0 +1,92 @@
+/* Стили для body (всего документа) */
+body {
+  padding: 0;
+  font-family: 'Nikukyu', sans-serif;
+  background-color: #D9FFDD;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  /* Минимальная высота - на весь экран */
+  overflow: hidden;
+  /* Отключаем прокручивание */
+}
+
+/* Стили для контейнера с содержимым */
+.container {
+  margin-left: 130px;
+  width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  /* Помещаем контейнер выше фона */
+  display: flex;
+  justify-content: space-between;
+  /* Разделяем содержимое равномерно */
+  position: relative;
+  /* Для управления вложенными элементами */
+}
+
+/* Стили для основного содержимого */
+.content {
+  flex: 1;
+  /* Занимает оставшееся пространство внутри контейнера */
+}
+
+.main-content {
+  text-align: left;
+  margin-top: 120px;
+  width: 800px;
+  /* Выравнивание текста по левому краю */
+}
+
+.main-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.main-content p {
+  width: 600px;
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Стили для фиксированного изображения справа */
+.side-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
+  /* Помещаем за содержимое */
+}
+
+/* Класс для стрелок навигации */
+.nav-arrows {
+  position: fixed;
+  top: 50%;
+  z-index: 1;
+  /* Устанавливаем элемент поверх других элементов */
+  display: flex;
+  /* Используем flexbox для расположения дочерних элементов */
+  justify-content: space-between;
+  /* Размещаем дочерние элементы по краям контейнера */
+  width: 100%;
+  /* Устанавливаем ширину на 100% родительского элемента */
+}
+
+.prev-page {
+  margin-left: 30px;
+}
+
+.next-page {
+  margin-right: 30px;
+}
+
+/* Стили для изображений внутри .nav-arrows */
+.nav-arrows img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,137 @@
+/* Стили для body (всего документа) */
+body {
+    padding: 0;
+    font-family: 'Nikukyu', sans-serif;
+    background-color: #D9FFDD;
+    display: flex;
+    /* Flexbox для выравнивания содержимого */
+    justify-content: flex-start;
+    /* Выравниваем содержимое по левому краю */
+    align-items: flex-start;
+    /* Выравниваем по верхнему краю */
+    min-height: 100vh;
+    /* Минимальная высота - на весь экран */
+    overflow: hidden;
+    /* Отключаем прокручивание */
+    flex-direction: column;
+}
+
+.container {
+    width: 1200px;
+    padding: 20px;
+    margin-left: 130px;
+}
+
+
+.main-section {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-top: 140px;
+    /* Добавляем отступ сверху */
+}
+
+.info {
+    max-width: 70%;
+    margin-right: 80px;
+}
+
+.feedback-form {
+    border: 1px solid #333;
+    padding: 20px;
+    max-width: 380px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.info h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.info .small-text {
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group p {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #A7BFFF;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
+}
+
+.send-button button {
+    background-color: #A7BFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.send-button button:hover {
+    background-color: #7A8CCC;
+}
+
+/* Класс для стрелок навигации */
+.nav-arrows {
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    /* Устанавливаем элемент поверх других элементов */
+    display: flex;
+    /* Используем flexbox для расположения дочерних элементов */
+    justify-content: space-between;
+    /* Размещаем дочерние элементы по краям контейнера */
+    width: 100%;
+    /* Устанавливаем ширину на 100% родительского элемента */
+}
+
+.prev-page {
+    margin-left: 30px;
+}
+
+.next-page {
+    margin-right: 30px;
+}
+
+/* Стили для изображений внутри .nav-arrows */
+.nav-arrows img {
+    width: 40px;
+    height: 40px;
+}

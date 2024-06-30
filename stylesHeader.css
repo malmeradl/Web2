@@ -1,0 +1,44 @@
+/* Стили для заголовка */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 70px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+header img {
+  max-height: 45px;
+}
+
+/* Стили для навигации */
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 18px;
+}
+
+.nav li {
+  margin-right: 110px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+
+.nav a.highlight {
+  background-color: #A7BFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 15px 15px;
+  border-radius: 30px;
+}

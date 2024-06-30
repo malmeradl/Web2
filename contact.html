@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- подключение файлов css -->
+  <link rel="stylesheet" type="text/css" href="stylesContact.css">
+  <link rel="stylesheet" type="text/css" href="stylesHeader.css">
+  <title>Канада - отдых и приключения</title>
+  <!-- подключения шрифтов -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nikukyu&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <!-- Логотип -->
+      <img src="icons/icon.png" alt="Логотип">
+      <!-- Навигация -->
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Стартовая</a></li>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contact.html" class="highlight">Обратная связь</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-section">
+      <div class="info">
+        <h1>У вас есть какие-то вопросы?</h1>
+        <p>Мы всегда рады Вам ответить!</p>
+        <p class="small-text">По поводу сотрудничества обращаться по номеру:</p>
+        <p class="small-text">тел: +375 29 638-37-27</p>
+      </div>
+      <!-- форма обратной связи -->
+      <div class="feedback-form">
+        <form>
+          <div class="form-group">
+            <p>Способ для связи с компанией:</p>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <div class="send-button">
+              <button type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- стрелки -->
+  <div class="nav-arrows">
+    <a href="about.html" class="prev-page"><img src="icons/left.png" alt="Previous page"></a>
+    <a href="index.html" class="next-page"><img src="icons/right.png" alt="Next page"></a>
+  </div>
+</body>
+
+</html>
